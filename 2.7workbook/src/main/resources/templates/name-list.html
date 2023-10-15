@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Name</title>
+    </head>
+    <body>
+        <p style="font-weight: bold" th:text="${name}"></p>
+        <ul>
+            <li th:text="${name}"></li>
+            <li th:text="${name}"></li>
+            <li th:text="${name}"></li>
+            <li th:text="${name}"></li>
+            <li th:text="${name}"></li>   
+        </ul>
+
+        <ul>
+            <li th:text="${#strings.substring(name, 0, 1)}"></li>
+            <li th:text="${#strings.substring(name, 0, 2)}"></li>
+            <li th:text="${#strings.substring(name, 0, 3)}"></li>
+            <li th:text="${#strings.substring(name, 0, 4)}"></li>
+            <li th:text="${#strings.substring(name, 0, 5)}"></li>   
+        </ul>
+
+    </body>
+</html>
